@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "RammetoOne", sans-serif;
+  src: url(/assets/fonts/RammettoOne-Regular.ttf);
+}
+@font-face {
+  font-family: "HindGuntur-Regular", sans-serif;
+  src: url(/assets/fonts/HindGuntur-Regular.ttf);
+}
+@font-face {
+  font-family: "HindGuntur-Bold", sans-serif;
+  src: url(/assets/fonts/HindGuntur-Bold.ttf);
+}
+
+:root {
+  /*Fonte og fontstørrelser*/
+  --logo-font: "RammetoOne";
+  --title-font: "HindGuntur-Bold";
+  --p-font: "HindGuntur-Regular";
+  --logo-font-size: 75px;
+  --h1-font-size: 40px;
+  --h2-font-size: 24px;
+  --h3-font-size: 18px;
+  --p-font-size: 16px;
+
+  /*Farver*/
+  --grej-dark: #373f8a;
+  --grej-light: #efeae6;
+  --grej-discount: #f81927;
+}
+
+* {
+  /*Nulstiller automatiske margin- og paddingindstillinger*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*Begrænser bodystørrelsen til max 1440px og centrerer body*/
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--grej-light);
+}
+
+main {
+  /*Bestemmer default baggrundsfarven i main, så baggrundsfarven i body >1400px kan adskille sig*/
+  background-color: var(--grej-dark);
+}
