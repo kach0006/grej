@@ -1,3 +1,4 @@
+/* font-face */
 @font-face {
   font-family: "RammetoOne", sans-serif;
   src: url(/assets/fonts/RammettoOne-Regular.ttf);
@@ -16,16 +17,39 @@
   --logo-font: "RammetoOne";
   --title-font: "HindGuntur-Bold";
   --p-font: "HindGuntur-Regular";
+  --nav-font: "HindGuntur-Bold";
+  --filter-cta-font: "HindGuntur-Bold";
+  --product-card-font: "HindGuntur-Bold";
+  --product-card-tag-font: "HindGuntur-Bold";
+  --product-card-price-font: "HindGuntur-Bold";
+  --article-title-font: "RammetoOne";
+  --article-description-font: "HindGuntur-Regular";
+  --footer-headline-font: "HindGuntur-Bold";
+  --footer-title-font: "HindGuntur-Regular";
+  --cta-font: "HindGuntur-Bold";
+  --cta-add-to-cart-font: "HindGuntur-Bold";
   --logo-font-size: 75px;
   --h1-font-size: 40px;
   --h2-font-size: 24px;
   --h3-font-size: 18px;
   --p-font-size: 16px;
+  --nav-font-size: 24px;
+  --filter-cta-font-size: 15px;
+  --product-card-font-size: 15px;
+  --product-card-tag-font-size: 22px;
+  --product-card-price-font-size: 24px;
+  --article-title-font-size: 64px;
+  --article-description-font-size: 32px;
+  --footer-headline-font-size: 40px;
+  --footer-title-font-size: 32px;
+  --cta-font-size: 32px;
+  --cta-add-to-cart-font-size: 18px;
 
   /*Farver*/
   --grej-dark: #373f8a;
   --grej-light: #efeae6;
   --grej-discount: #f81927;
+  --grej-cart: #000000;
 }
 
 * {
