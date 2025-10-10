@@ -4,11 +4,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f5f2ec;
+  background-color: var(--grej-light);
   background-image: linear-gradient(90deg, #373f8a 1px, transparent 1px), linear-gradient(#373f8a 1px, transparent 1px);
   background-size: 70px 70px;
   background-position: center;
-  overflow: hidden; /* undgå scrollbars */
+  overflow: hidden; /* undgår scrollbars */
 }
 
 /* === SEKTIONEN === */
@@ -23,7 +23,7 @@ body {
 /* === DEN BLÅ BOKS === */
 .kit-box {
   background-color: var(--grej-dark);
-  color: #fff;
+  color: var(--grej-light);
   width: 85%; /* dækker næsten hele bredden */
   padding: 5rem 6rem;
   display: flex;
