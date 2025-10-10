@@ -1,0 +1,31 @@
+#header-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-banner-p {
+  font-family: var(--p-font);
+  font-size: var(--p-font-size);
+  color: var(--grej-dark);
+}
+#header-logo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grej-dark);
+  padding: 20px;
+}
+.search-bar {
+  padding-right: 70px;
+}
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-bar-text {
+  font-family: var(--nav-font);
+  font-size: var(--nav-font-size);
+  color: var(--grej-dark);
+}
