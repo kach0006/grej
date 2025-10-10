@@ -1,0 +1,92 @@
+/* === TERNET BAGGRUND (fylder hele siden) === */
+.kit-section {
+  background-color: #f5f2ec;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+  width: 100vw; /* fylder hele skærmbredden */
+}
+
+/* === DEN BLÅ BOKS (strækker sig over hele bredden) === */
+.kit-box {
+  background-color: #263b99;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* === INDHOLD INDE I DEN BLÅ BOKS === */
+.kit-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* === TEKST === */
+.kit-text h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.kit-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 440px;
+  color: var(--grej-light);
+}
+
+/* === KNAP === */
+.kit-text button {
+  background-color: var(--grej-light);
+  color: var(--grej-dark);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* === BILLEDE === */
+.kit-image img {
+  width: 100%;
+  display: block;
+  margin-right: 5rem;
+}
+
+/* === RESPONSIVT === */
+@media (max-width: 900px) {
+  .kit-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .kit-box {
+    padding: 3rem 2rem;
+  }
+
+  .kit-text {
+    margin-bottom: 3rem;
+  }
+
+  .kit-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .kit-text p {
+    margin: 1rem auto 2rem;
+  }
+
+  .kit-text button {
+    width: auto;
+  }
+}
