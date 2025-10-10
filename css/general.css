@@ -1,15 +1,15 @@
 /* font-face */
 @font-face {
-  font-family: "RammetoOne", sans-serif;
-  src: url(/assets/fonts/RammettoOne-Regular.ttf);
+  font-family: "RammetoOne";
+  src: url("../assets/fonts/RammettoOne-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "HindGuntur-Regular", sans-serif;
-  src: url(/assets/fonts/HindGuntur-Regular.ttf);
+  font-family: "HindGuntur-Regular";
+  src: url("../assets/fonts/HindGuntur-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "HindGuntur-Bold", sans-serif;
-  src: url(/assets/fonts/HindGuntur-Bold.ttf);
+  font-family: "HindGuntur-Bold";
+  src: url("../assets/fonts/HindGuntur-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -61,7 +61,7 @@
 
 body {
   /*Begrænser bodystørrelsen til max 1440px og centrerer body*/
-  max-width: 1400px;
+  max-width: 1700px;
   margin: 0 auto;
   background-color: var(--grej-light);
 }
