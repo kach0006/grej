@@ -19,7 +19,7 @@
   --p-font: "HindGuntur-Regular";
   --nav-font: "HindGuntur-Bold";
   --filter-cta-font: "HindGuntur-Bold";
-  --product-card-font: "HindGuntur-Bold";
+  --product-card-font: "HindGuntur-Regular";
   --product-card-tag-font: "HindGuntur-Bold";
   --product-card-price-font: "HindGuntur-Bold";
   --article-title-font: "RammetoOne";
@@ -36,7 +36,7 @@
   --nav-font-size: 24px;
   --filter-cta-font-size: 15px;
   --product-card-font-size: 15px;
-  --product-card-tag-font-size: 22px;
+  --product-card-tag-font-size: 16px;
   --product-card-price-font-size: 24px;
   --article-title-font-size: 64px;
   --article-description-font-size: 32px;
@@ -69,4 +69,31 @@ body {
 main {
   /*Bestemmer default baggrundsfarven i main, så baggrundsfarven i body >1400px kan adskille sig*/
   background-color: var(--grej-dark);
+  min-height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: var(--logo-font);
+  font-size: var(--h1-font-size);
+  color: var(--grej-light);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-size: var(--h2-font-size);
+  color: var(--grej-dark);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  color: var(--grej-light);
+}
+
+.product-card-tag {
+  font-family: var(--product-card-tag-font);
+  font-size: var(--product-card-tag-font-size);
 }

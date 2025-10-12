@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="./css/general.css" />
-    <title>GREJ - Forside</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/breadcrumbs.css" />
+    <link rel="stylesheet" href="./css/produkter.css" />
+    <script src="./js/produkter.js" defer></script>
+    <title>GREJ - Produkter</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <section id="header-banner">
+        <p class="header-banner-p">Fri fragt over 299 kr</p>
+        <p class="header-banner-p">Levering 1-3 hverdage</p>
+        <p class="header-banner-p">Svanemærket</p>
+      </section>
+      <section id="header-logo-section">
+        <div class="header-logo-flex-item search-bar">
+          <img src="assets/icons/Search.png" height="25px" alt="search icon" />
+        </div>
+        <div class="logo header-logo-flex-item">
+          <img src="assets/icons/logo.png" height="50px" alt="logo" />
+        </div>
+        <div class="header-logo-flex-item">
+          <img src="assets/icons/favorites.png" height="25px" alt="favorites icon" />
+          <img src="assets/icons/cart.png" height="25px" alt="cart icon" />
+        </div>
+      </section>
+      <section id="nav-bar">
+        <p class="nav-bar-text">PRODUKTER</p>
+        <p class="nav-bar-text">KITS</p>
+        <p class="nav-bar-text">TILBUD</p>
+        <p class="nav-bar-text">GUIDES</p>
+      </section>
+    </header>
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="produkter.html">Produkter</a></li>
+      </ul>
+      <h1>Produkter</h1>
+      <section class="main-categories">
+        <div data-subcategory="kitchen tools" class="main-category">
+          <img src="/assets/img/startkit.png" alt="" />
+          <h3>Køkkengrej</h3>
+        </div>
+        <div data-subcategory="serveware" class="main-category">
+          <img src="/assets/img/startkit.png" alt="" />
+          <h3>Borddækning</h3>
+        </div>
+        <div data-subcategory="kitchen appliances" class="main-category">
+          <img src="/assets/img/startkit.png" alt="" />
+          <h3>Elektronik</h3>
+        </div>
+      </section>
+      <h2>Alle produkter</h2>
+      <section class="sorting">
+        <button class="sorting-button" data-direction="low-high">Stigende pris</button>
+        <button class="sorting-button" data-direction="high-low">Faldende pris</button>
+      </section>
+      <section class="product-cards"></section>
+    </main>
+
     <footer></footer>
   </body>
 </html>

@@ -1,0 +1,140 @@
+h1 {
+  text-align: center;
+  margin: 0 0 100px;
+}
+
+.main-categories {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 0 10px 50px 10px;
+}
+
+.main-category {
+  position: relative;
+  max-width: 350px;
+  cursor: pointer;
+}
+
+.main-category img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.main-category h3 {
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  color: var(--grej-dark);
+}
+
+h2 {
+  background-color: var(--grej-light);
+  text-align: center;
+  align-items: center;
+  padding: 10px 0 5px;
+}
+
+.sorting {
+  display: flex;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.sorting-button:first-child {
+  margin-left: 40px;
+}
+
+.sorting-button {
+  background-color: var(--grej-light);
+  border: none;
+
+  cursor: pointer;
+  font-family: var(--p-font);
+
+  padding: 3px 10px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-auto-rows: auto;
+  gap: 10px;
+  margin: 0;
+  justify-content: center;
+}
+
+.product-card {
+  display: grid;
+  background-color: var(--grej-light);
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  align-items: center;
+  position: relative;
+}
+
+h3 {
+  color: var(--grej-dark);
+  text-align: left;
+  padding-left: 10px;
+  font-size: var(--product-card-font-size);
+  font-family: var(--product-card-font);
+}
+
+.product-card-tag {
+  display: inline-flex;
+  text-transform: uppercase;
+  background-color: var(--grej-discount);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  padding: 0 5px;
+  color: var(--grej-light);
+  font-size: var(--product-card-tag-font-size);
+}
+
+.product-title-price {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  gap: 45px;
+  color: var(--grej-light);
+  font-family: var(--product-card-price-font);
+}
+.product-card-price {
+  display: inline-flex;
+  background-color: var(--grej-dark);
+  bottom: 60px;
+  right: 10px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--product-card-price-font-size);
+}
+
+.image-container {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .main-categories {
+    margin: 0 0 50px 0px;
+  }
+
+  .main-category img {
+    border-radius: 50%;
+  }
+
+  .main-category h3 {
+    position: relative;
+    padding-top: 20px;
+    color: var(--grej-light);
+  }
+}
