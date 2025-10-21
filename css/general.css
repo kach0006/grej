@@ -96,6 +96,7 @@ h3 {
 
 p {
   font-size: var(--p-font-size);
+  font-family: var(--p-font);
 }
 
 .product-card-tag {
