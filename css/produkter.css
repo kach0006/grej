@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  margin: 0 0 100px;
+  margin: 0 0 50px;
 }
 
 .main-categories {
@@ -20,14 +20,16 @@ h1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
 .main-category h3 {
   text-align: center;
-  position: absolute;
   bottom: 5px;
   width: 100%;
-  color: var(--grej-dark);
+  color: var(--grej-light);
+  font-size: var(--h3-font-size);
 }
 
 h2 {
@@ -49,11 +51,10 @@ h2 {
 
 .sorting-button {
   background-color: var(--grej-light);
-  border: none;
-
-  cursor: pointer;
   font-family: var(--p-font);
-
+  border: none;
+  font-size: var(--sorting-font-size);
+  cursor: pointer;
   padding: 3px 10px;
 }
 
