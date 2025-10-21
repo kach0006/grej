@@ -27,5 +27,5 @@
 .nav-bar-text {
   font-family: var(--nav-font);
   font-size: var(--nav-font-size);
-  color: var(--grej-dark);
+  color: #000000;
 }

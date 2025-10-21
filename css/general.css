@@ -28,22 +28,23 @@
   --footer-title-font: "HindGuntur-Regular";
   --cta-font: "HindGuntur-Bold";
   --cta-add-to-cart-font: "HindGuntur-Bold";
-  --logo-font-size: 75px;
-  --h1-font-size: 40px;
-  --h2-font-size: 24px;
-  --h3-font-size: 18px;
+  --logo-font-size: 50px;
+  --h1-font-size: 30px;
+  --h2-font-size: 18px;
+  --h3-font-size: 20px;
   --p-font-size: 16px;
-  --nav-font-size: 24px;
+  --nav-font-size: 18px;
   --filter-cta-font-size: 15px;
   --product-card-font-size: 15px;
   --product-card-tag-font-size: 16px;
-  --product-card-price-font-size: 24px;
+  --product-card-price-font-size: 18px;
   --article-title-font-size: 64px;
   --article-description-font-size: 32px;
   --footer-headline-font-size: 40px;
   --footer-title-font-size: 32px;
   --cta-font-size: 32px;
   --cta-add-to-cart-font-size: 18px;
+  --sorting-font-size: 14px;
 
   /*Farver*/
   --grej-dark: #373f8a;
@@ -91,6 +92,10 @@ h3 {
   font-family: var(--title-font);
   font-size: var(--h3-font-size);
   color: var(--grej-light);
+}
+
+p {
+  font-size: var(--p-font-size);
 }
 
 .product-card-tag {
