@@ -4,21 +4,24 @@ const id = params.get("id");
 
 console.log("mit id fra URL" + id);
 
-fetch(`https://dummyjson.com/products/category/kitchen-accessories/${id}`)
+fetch(`https://dummyjson.com/products/${id}`)
 .then((res) => res.json())
 .then((product) => {
 
 productPresentation.innerHTML = `
-<div>
-<img class="single-view-image" src="https://cdn.dummyjson.com/product-images/kitchen-accessories/${product.id}/1.webp" alt="produktbillede" />
+<div class="single-view-image">
+<img src="${product.images[0]}" alt="produktbillede" />
 </div>
 <div class="single-view-product-info">
 <h2 class="single-view-title">${product.title}</h2>
 <p class="single-view-description">${product.description}</p>
-<div class="product-prices"></div>
-<p class="single-view-price">${product.price}</p>
-<p class="single-view-discount"></p>
+
+<div class="product-prices">
+<p class="single-view-price ${product.discountPercentage && "scratch-price"}>${product.price} KR</p>
+<div class="no-discount ${product.discountPercentage && "single-view-discount"}">
+<p class="single-view-discount-price">${Math.round(product.price - product.price * product.discountPercentage / 100)} KR</p>
 </div>
+
 <div class="basket-button-div">
 <a class="basket-button" href="">TILFØJ TIL KURV</a>
 </div>
@@ -33,9 +36,12 @@ productPresentation.innerHTML = `
 </div>
 <div class="product-dimension-div">
   <h3>Dimensions</h3>
-  <p class="product-width">${product.dimensions.width}</p>
-  <p class="product-height">${product.dimensions.height}</p>
-  <p class="product-depth">${product.dimensions.depth}</p>
+  <p class="dimensions-title">Width:</p>
+  <p class="product-width">${product.dimensions.width} cm</p>
+  <p class="dimensions-title">Height:</p>
+  <p class="product-height">${product.dimensions.height} cm</p>
+  <p class="dimensions-title">Depth:</p>
+  <p class="product-depth">${product.dimensions.depth} cm</p>
 </div>
 
 <div class="shipping-info-div">
@@ -43,10 +49,12 @@ productPresentation.innerHTML = `
   <p class="shipping-info">${product.shippingInformation}</p>
 </div>
 <div class="warranty-and-return-info-div">
+<h3>Warranty and return policy</h3>
   <p class="warranty-info">${product.warrantyInformation}</p>
   <p class="return-policy">${product.returnPolicy}</p>
 </div>
 </details>
+</div>
 `;
 
 });
