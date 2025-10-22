@@ -1,0 +1,33 @@
+.all-products-slider,
+.discount-products-slider{
+    margin-bottom: 2em;
+}
+
+.products-image-slider{
+    margin: 2em;
+    padding: 2em;
+}
+
+h2{
+    background-color: var(--grej-light);
+    text-align: center;
+}
+
+.CTA-div{
+    display: flex;
+    justify-content: center;
+}
+
+.se-produkter-CTA,
+.se-tilbud-CTA{
+    width: 400px;
+    text-align: center;
+    font-size: var(--cta-font-size);
+    font-family: var(--cta-font);
+    color: var(--grej-dark);
+    background-color: var(--grej-light);
+    text-decoration-line: none;
+    border-radius: 50px;
+
+}
+
