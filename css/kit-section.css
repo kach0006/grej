@@ -1,6 +1,5 @@
 /* === TERNET BAGGRUND === */
-html,
-body {
+.kit-section {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -57,12 +56,14 @@ body {
   background-color: var(--grej-light);
   color: var(--grej-dark);
   border: none;
-  padding: 1rem 6rem;
-  border-radius: 50px;
+  padding: rem 4rem;
+  border-radius: 30px;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s ease;
+  font-family: var(--cta-font);
+  text-decoration: none;
 }
 
 /* === BILLEDE === */
@@ -71,3 +72,57 @@ body {
   display: block;
   margin-right: 5rem;
 } */
+
+/* === TERNET BAGGRUND === */
+.artikel-section {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--grej-dark);
+  background-image: linear-gradient(90deg, #efeae6 1px, transparent 1px), linear-gradient(#efeae6 1px, transparent 1px);
+  background-size: 70px 70px;
+  background-position: center;
+  overflow: hidden; /* undgår scrollbars */
+}
+
+/* === SEKTIONEN === */
+.artikel-section {
+  width: 100vw;
+  height: 100vh; /* fylder hele skærmhøjden */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centrerer vertikalt */
+}
+
+/* === DEN BEIGE BOKS === */
+.artikel-box {
+  background-color: var(--grej-light);
+  color: var(--grej-dark);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* let dybde */
+  padding: 3rem 4rem;
+  gap: 4rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* === TEKST === */
+.artikel-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--grej-dark);
+}
+
+.artikel-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: var(--grej-dark);
+  opacity: 0.95;
+}

@@ -1,24 +1,24 @@
 .all-products-slider,
-.discount-products-slider{
-    margin-bottom: 2em;
+.discount-products-slider {
+  margin-bottom: 2em;
 }
 
-.products-image-slider{
-    margin: 2em;
-    padding: 2em;
+.products-image-slider {
+  margin: 2em;
+  padding: 2em;
 }
 
-h2{
-    background-color: var(--grej-light);
-    text-align: center;
+h2 {
+  background-color: var(--grej-light);
+  text-align: center;
 }
 
-.CTA-div{
-    display: flex;
-    justify-content: center;
+.CTA-div {
+  display: flex;
+  justify-content: center;
 }
 
-.se-produkter-CTA,
+/*.se-produkter-CTA,
 .se-tilbud-CTA{
     width: 400px;
     text-align: center;
@@ -28,6 +28,34 @@ h2{
     background-color: var(--grej-light);
     text-decoration-line: none;
     border-radius: 50px;
+}*/
 
+.se-produkter-CTA,
+.se-tilbud-CTA {
+  background-color: var(--grej-light);
+  color: var(--grej-dark);
+  border: none;
+  padding: 0.7rem 4rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: var(--cta-font);
+  text-decoration: none;
 }
 
+.se-produkter-blue-CTA,
+.se-tilbud-blue-CTA {
+  background-color: var(--grej-dark);
+  color: var(--grej-light);
+  border: none;
+  padding: 0.7rem 4rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: var(--cta-font);
+  text-decoration: none;
+}
