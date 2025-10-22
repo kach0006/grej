@@ -10,6 +10,8 @@ fetch("https://dummyjson.com/products/category/kitchen-accessories?limit=0")
   });
 
 function showProducts(product) {
+  categoryTitle.innerHTML = "";
+  categoryTitle.innerHTML += `<h2>Alle produkter</h2>`;
   productCards.innerHTML = "";
   product.forEach((element) => {
     productCards.innerHTML += `
@@ -26,7 +28,9 @@ function showProducts(product) {
   });
 }
 
+
 const mainCategories = document.querySelectorAll(".main-categories");
+const categoryTitle = document.querySelector(".product-category-title");
 
 mainCategories.forEach((category) => {
   category.addEventListener("click", showFiltered);
@@ -38,7 +42,18 @@ function showFiltered(event) {
   const subCategory = mainCategory.dataset.subcategory;
   console.log(mainCategory.dataset.subcategory);
   currentData = allData.filter((product) => product.tags.includes(subCategory)); // Filtrer til produkter, hvor arrayet tags indeholder den subcategory, som er defineret under data i HTML'en.
+
+// viser ekstra tags (glasses & plates) når man trykker på serveware
+  if (subCategory === "serveware") {
+    currentData = allData.filter(
+      (product) => product.tags.includes("serveware") || product.tags.includes("glasses") || product.tags.includes("plates")
+    );
+  } else {
+    currentData = allData.filter((product) => product.tags.includes(subCategory));
+  }
   showProducts(currentData);
+  categoryTitle.innerHTML = "";
+  categoryTitle.innerHTML += `<h2>${subCategory}</h2>`;
 }
 
 // sorting buttons
