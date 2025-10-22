@@ -15,7 +15,7 @@ function showProducts(product) {
   productCards.innerHTML = "";
   product.forEach((element) => {
     productCards.innerHTML += `
-     <article class="product-card" data-category="kitchen-accessories">
+     <a href="produkt.html?id=${element.id}"><article class="product-card" data-category="kitchen-accessories">
      <div class="product-card-tag">Tag</div>
            <div class="image-container"><img src="${element.thumbnail}" alt="Billede af ${
       element.title
@@ -24,7 +24,8 @@ function showProducts(product) {
            <h3>${element.title}</h3>
            <div class="product-card-price">${Math.ceil(element.price)} KR</div>
            </div>
-         </article>`;
+         </article>
+         </a>`;
   });
 }
 
