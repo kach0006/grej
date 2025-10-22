@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <script src="./js/footer-accordion.js" defer></script>
+    <script src="./js/footer.js" defer></script>
     <title>GREJ - Forside</title>
   </head>
   <body>
@@ -39,31 +39,42 @@
     <main>Yoyoyo</main>
     <footer>
       <section class="desktop-footer">
-        <ul class="footer-headline">
-          Kundeservice
-          <li><a href="">Bytte & Retur</a></li>
-          <li><a href="">Kontakt</a></li>
-          <li><a href="">Fragt & Levering</a></li>
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Kundeservice</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <li class="accordion-content"><a href="">Bytte & Retur</a></li>
+          <li class="accordion-content"><a href="">Kontakt</a></li>
+          <li class="accordion-content"><a href="">Fragt & Levering</a></li>
         </ul>
-        <ul class="footer-headline">
-          Ansvarlighed
-          <li><a href="">Certificeringer</a></li>
-          <li><a href="">Persondatapolitik</a></li>
-          <li><a href="">Sager vi støtter</a></li>
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Ansvarlighed</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <li class="accordion-content"><a href="">Certificeringer</a></li>
+          <li class="accordion-content"><a href="">Databeskyttelse</a></li>
+          <li class="accordion-content"><a href="">Sager vi støtter</a></li>
         </ul>
-        <ul class="footer-headline">
-          Om GREJ
-          <li><a href="">Historie</a></li>
-          <li><a href="">Presse</a></li>
-          <li><a href="">Karriere</a></li>
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Om GREJ</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <div class="accordion-content">
+            <li><a href="">Historie</a></li>
+            <li><a href="">Presse</a></li>
+            <li><a href="">Karriere</a></li>
+          </div>
         </ul>
       </section>
       <section class="footer-images">
         <img id="footer-logo" src="./assets/icons/grej_logo.png" alt="GREJ logo" />
         <div class="social-media-icons">
-          <img src="./assets/icons/grej_logo.png" alt="Instagram icon" />
-          <img src="./assets/icons/grej_logo.png" alt="Facebook icon" />
-          <img src="./assets/icons/grej_logo.png" alt="TikTok icon" />
+          <a href=""><img src="./assets/icons/grej_logo.png" alt="Instagram icon" /></a>
+          <a href=""><img src="./assets/icons/grej_logo.png" alt="Facebook icon" /></a>
+          <a href=""><img src="./assets/icons/grej_logo.png" alt="TikTok icon" /></a>
         </div>
       </section>
       <p id="cvr">GREJ CVR</p>
