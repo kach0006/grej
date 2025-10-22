@@ -1,12 +1,14 @@
 footer {
   background-color: var(--grej-dark);
   padding: 0 50px;
+  border-top: 1px solid var(--grej-light);
 }
 
 .desktop-footer {
   display: flex;
   justify-content: space-between;
   color: var(--grej-light);
+  padding-top: 30px;
 }
 
 ul {
@@ -21,6 +23,7 @@ ul li {
 .footer-headline {
   font-family: var(--footer-headline-font);
   font-size: var(--footer-headline-font-size);
+  color: var(--grej-light);
 }
 
 li a {
@@ -50,9 +53,10 @@ li a:hover {
 }
 .social-media-icons img {
   width: 100%;
-  max-width: 80px;
+  max-width: 60px;
   aspect-ratio: 1/1;
   object-fit: contain;
+  padding-left: 10px;
 }
 
 #cvr {
@@ -66,6 +70,7 @@ li a:hover {
 
 .accordion-header {
   padding-bottom: 10px;
+  color: var(--grej-light);
 }
 
 @media (max-width: 560px) {
@@ -98,7 +103,7 @@ li a:hover {
   }
 
   .accordion-arrow {
-    content: url(../assets/icons/triangle.png);
+    content: url(../assets/icons/triangle.webp);
     max-height: 15px;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
