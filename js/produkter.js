@@ -40,3 +40,18 @@ function showFiltered(event) {
   currentData = allData.filter((product) => product.tags.includes(subCategory)); // Filtrer til produkter, hvor arrayet tags indeholder den subcategory, som er defineret under data i HTML'en.
   showProducts(currentData);
 }
+
+// sorting buttons
+document.querySelector(".sorting").addEventListener("click", showSorted);
+
+function showSorted(event) {
+  const direction = event.target.dataset.direction;
+  if (direction=="low-high"){
+    currentData.sort((a, b) => a.price - b.price);
+  } else {
+    currentData.sort((a, b) => b.price - a.price);
+  }
+  showProducts(currentData);
+}
+
+let allData, currentData;
