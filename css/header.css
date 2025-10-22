@@ -16,6 +16,14 @@
   background-color: var(--grej-dark);
   padding: 20px;
 }
+
+.header-logo-flex-item img {
+  transition: transform 0.1s ease;
+}
+.header-logo-flex-item img:hover {
+  transform: scale(1.1);
+}
+
 .search-bar {
   padding-right: 70px;
 }
@@ -28,4 +36,9 @@
   font-family: var(--nav-font);
   font-size: var(--nav-font-size);
   color: #000000;
+  text-decoration: none;
+  transition: transform 0.1s ease;
+}
+.nav-bar-text:hover {
+  transform: scale(1.1);
 }
