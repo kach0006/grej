@@ -1,38 +1,46 @@
+/* === BILELDET === */
+.grej-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* === TERNET BAGGRUND === */
+/* === SEKTIONEN === */
 .kit-section {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh; /* stadig fylder skærmen, men kan vokse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* lidt luft rundt om */
   background-color: var(--grej-light);
   background-image: linear-gradient(90deg, #373f8a 1px, transparent 1px), linear-gradient(#373f8a 1px, transparent 1px);
   background-size: 70px 70px;
   background-position: center;
-  overflow: hidden; /* undgår scrollbars */
+  overflow: visible; /* så indholdet kan vokse */
 }
 
-/* === SEKTIONEN === */
-.kit-section {
-  width: 100vw;
-  height: 100vh; /* fylder hele skærmhøjden */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* centrerer vertikalt */
+/* === BILELDET === */
+.kit-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* === DEN BLÅ BOKS === */
 .kit-box {
   background-color: var(--grej-dark);
   color: var(--grej-light);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* let dybde */
-  padding: 3rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 4rem;
-  margin: 0 auto;
+  align-items: center;
+  width: 100%;
   max-width: 1200px;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
 }
 
 /* === TEKST === */
@@ -66,12 +74,9 @@
   text-decoration: none;
 }
 
-/* === BILLEDE === */
-/* .kit-image img {
-  width: 90%;
-  display: block;
-  margin-right: 5rem;
-} */
+#artikel-3 {
+  border-bottom: 40px solid var(--grej-dark);
+}
 
 /* === TERNET BAGGRUND === */
 .artikel-section {
