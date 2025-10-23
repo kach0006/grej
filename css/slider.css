@@ -3,43 +3,50 @@
   margin-bottom: 2em;
 }
 
+h2 {
+  background-color: var(--grej-light);
+  text-align: center;
+}
+
+/* == PRODUCT CARD SECTION == */
 .products-image-slider {
   margin: 2em;
-  padding: 2em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   gap: 5px;
   width: 70%;
 }
+.product-image-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* == ENKELT PRODUCT CARD == */
 .product-in-slider {
   background-color: var(--grej-light);
   display: grid;
   background-color: var(--grej-light);
   grid-template-rows: subgrid;
   grid-row: span 4;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
-  padding: 30px;
   img {
     width: 100%;
   }
+  flex: 0 0 auto;
+  width: 250px;
+  height: 380px;
 }
+
+/* == ARTIKELNAVN & PRIS == */
 .product-card-title {
   color: var(--grej-dark);
   text-align: left;
   padding-left: 10px;
   font-size: var(--product-card-font-size);
   font-family: var(--product-card-font);
-}
-.product-card-title-price {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  z-index: 1;
-  position: absolute;
-  bottom: 10px;
-  gap: 45px;
-  color: var(--grej-light);
-  margin: 10px;
 }
 .price {
   display: inline-flex;
@@ -55,23 +62,34 @@
   font-family: var(--product-card-price-font);
   color: var(--grej-light);
 }
+.product-card-title-price {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+  gap: 45px;
+  color: var(--grej-light);
+  margin: 10px;
+}
+
+/* == SLIDER GRID== */
 .slider-grid {
   display: flex;
   justify-content: center;
 }
+
+/* == ARROWS == */
 .slider-icon {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   img {
-    width: 50px;
+    width: 30px;
   }
 }
-h2 {
-  background-color: var(--grej-light);
-  text-align: center;
-}
 
+/* == CTA == */
 .CTA-div {
   display: flex;
   justify-content: center;
