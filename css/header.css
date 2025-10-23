@@ -5,7 +5,7 @@
 }
 .header-banner-p {
   font-family: var(--p-font);
-  font-size: var(--p-font-size);
+  font-size: var(--header-banner-p-size);
   color: var(--grej-dark);
 }
 #header-logo-section {
