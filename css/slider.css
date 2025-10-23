@@ -6,6 +6,7 @@
 h2 {
   background-color: var(--grej-light);
   text-align: center;
+  padding: 1em 0em 1em 0em;
 }
 
 /* == PRODUCT CARD SECTION == */
@@ -123,6 +124,13 @@ h2 {
   margin-bottom: 50px;
 }
 
+.se-produkter-CTA:hover,
+.se-tilbud-CTA:hover{
+  background-color: var(--grej-dark);
+  color: var(--grej-light);
+  border: 2px solid var(--grej-light);
+}
+
 .se-produkter-blue-CTA,
 .se-tilbud-blue-CTA {
   background-color: var(--grej-dark);
@@ -136,4 +144,11 @@ h2 {
   transition: 0.3s ease;
   font-family: var(--cta-font);
   text-decoration: none;
+}
+
+.se-produkter-blue-CTA:hover,
+.se-tilbud-blue-CTA:hover{
+  background-color: var(--grej-light);
+  color: var(--grej-dark);
+  border: 2px solid var(--grej-dark);
 }
