@@ -114,6 +114,10 @@ summary{
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
+  #artikel-1{
+    border-top: 1px solid var(--grej-light);
+  }
+
 @media (min-width: 1000px){
     .single-view-product-info,
 .single-view-image{
