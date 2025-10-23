@@ -1,13 +1,19 @@
 const productPresentation = document.querySelector(".product-presentation");
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
+const current = document.querySelector("#current");
 
 console.log("mit id fra URL" + id);
 
 fetch(`https://dummyjson.com/products/${id}`)
 .then((res) => res.json())
-.then((product) => {
+.then((data) => showProduct(data));
 
+
+  function showProduct(product) {
+    current.textContent = product.title;
+
+  
 productPresentation.innerHTML = `
 <div class="single-view-image">
 <img src="${product.images[0]}" alt="produktbillede" />
@@ -26,7 +32,9 @@ productPresentation.innerHTML = `
 <a class="basket-button" href="">TILFØJ TIL KURV</a>
 </div>
 <details class="details-accordian">
-<summary>Detaljer</summary>
+<summary>Detaljer
+<div class="details-accordion-arrow"></div>
+</summary>
 <div class="stock-div">
   <p class="availability-status">${product.availabilityStatus}</p>
 </div>
@@ -56,5 +64,5 @@ productPresentation.innerHTML = `
 </details>
 </div>
 `;
-
-});
+  }
+;
