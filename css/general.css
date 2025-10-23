@@ -1,15 +1,15 @@
 /* font-face */
 @font-face {
   font-family: "RammetoOne";
-  src: url("../assets/fonts/RammettoOne-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/RammettoOne-Regular.woff2") format("truetype");
 }
 @font-face {
   font-family: "HindGuntur-Regular";
-  src: url("../assets/fonts/HindGuntur-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/HindGuntur-Regular.woff2") format("truetype");
 }
 @font-face {
   font-family: "HindGuntur-Bold";
-  src: url("../assets/fonts/HindGuntur-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/HindGuntur-Bold.woff2") format("truetype");
 }
 
 :root {
