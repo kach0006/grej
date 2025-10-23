@@ -2,9 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 4em;
-    margin: 2em 4em 2em 4em;
+    column-gap: 5em;
+    border-top: 1px solid var(--grej-light);
+    border-bottom: 1px solid var(--grej-light);
+    margin-top: 1em;
+    padding: 5em 2em 5em 2em;
+    height: 100%;
+    background-color: var(--grej-dark);
+    background-image: linear-gradient(90deg, #efeae6 1px, transparent 1px), linear-gradient(#efeae6 1px, transparent 1px);
+    background-size: 70px 70px;
+    background-position: center;
+    overflow: hidden;
 }
+
 
 h3{
     color: var(--grej-dark);
@@ -27,17 +37,27 @@ p{
 .single-view-image{
     background-color: var(--grej-light);
     height: auto;
-    padding: 3em;
+    padding: 3em 0em 0em 0em;
+}
+
+.single-view-description{
+    margin: 2em;
 }
 
 .single-view-title{
     text-align: center;
+    margin-top: 3em;
 }
 
 .product-prices{
     display: flex;
     justify-content: center;
     margin-top: 3em;
+}
+
+.single-view-discount-price{
+    font-size: 24px;
+    color: var(--grej-discount);
 }
 
 .single-view-image img{
@@ -65,13 +85,44 @@ p{
 .basket-button-div{
     display: flex;
     justify-content: center;
-    margin: 3em 0em;
+    margin-top: 2em;
 }
+
+summary{
+    border-top: 1px solid var(--grej-dark);
+    padding: 1em;
+    margin-top: 4em;
+    font-family: var(--footer-title-font);
+    color: var(--grej-dark);
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.details-accordian[open] .details-accordion-arrow{
+    transform: rotate(180deg);
+}
+
+
+.details-accordion-arrow {
+    content: url(../assets/icons/triangle-blue.webp);
+    max-height: 15px;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
 
 @media (min-width: 1000px){
     .single-view-product-info,
 .single-view-image{
     width: 40%;
-    padding: 4em;
+    padding: 4em 4em 1.5em 4em;
 }
+
+.basket-button-div{
+    margin: 8em 0em 0em 0em;
+}
+
 }
