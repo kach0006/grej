@@ -4,6 +4,9 @@
     linear-gradient(#efeae6 1px, transparent 1px);
   background-size: 70px 70px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-container {
