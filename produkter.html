@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/breadcrumbs.css" />
     <link rel="stylesheet" href="./css/produkter.css" />
     <script src="./js/produkter.js" defer></script>
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/footer.js" defer></script>
     <title>GREJ - Produkter</title>
   </head>
   <body>
@@ -20,14 +22,14 @@
       </section>
       <section id="header-logo-section">
         <div class="header-logo-flex-item search-bar">
-          <img src="assets/icons/Search.png" height="25px" alt="search icon" />
+          <img loading="lazy" src="assets/icons/Search.png" height="25px" alt="search icon" />
         </div>
         <div class="logo header-logo-flex-item">
-          <img src="assets/icons/logo.png" height="50px" alt="logo" />
+          <img loading="lazy" src="assets/icons/logo.png" height="50px" alt="logo" />
         </div>
         <div class="header-logo-flex-item">
-          <img src="assets/icons/favorites.png" height="25px" alt="favorites icon" />
-          <img src="assets/icons/cart.png" height="25px" alt="cart icon" />
+          <img loading="lazy" src="assets/icons/favorites.png" height="25px" alt="favorites icon" />
+          <img loading="lazy" src="assets/icons/cart.png" height="25px" alt="cart icon" />
         </div>
       </section>
       <section id="nav-bar">
@@ -45,15 +47,17 @@
       <h1>Produkter</h1>
       <section class="main-categories">
         <div data-subcategory="kitchen tools" class="main-category">
-          <img src="assets/img/kokkengrej.png" alt="Køkkengrej" />
+          <img loading="lazy" src="assets/img/kokkengrej.png" alt="Køkkengrej" />
           <h3>Køkkengrej</h3>
         </div>
         <div data-subcategory="serveware" class="main-category">
-          <img src="assets/img/borddakning.png" alt="Artikler til borddækning" />
+          <img loading="lazy" src="assets/img/borddakning.png" alt="Artikler til borddækning" />
           <h3>Borddækning</h3>
         </div>
         <div data-subcategory="kitchen appliances" class="main-category">
-          <div><img src="assets/img/elektronik.png" alt="Elektronik til køkken" /></div>
+          <div>
+            <img loading="lazy" src="assets/img/elektronik.png" alt="Elektronik til køkken" />
+          </div>
           <h3>Elektronik</h3>
         </div>
       </section>
@@ -65,6 +69,51 @@
       <section class="product-cards"></section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section class="desktop-footer">
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Kundeservice</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <li class="accordion-content"><a href="">Bytte & Retur</a></li>
+          <li class="accordion-content"><a href="">Kontakt</a></li>
+          <li class="accordion-content"><a href="">Fragt & Levering</a></li>
+        </ul>
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Ansvarlighed</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <li class="accordion-content"><a href="">Certificeringer</a></li>
+          <li class="accordion-content"><a href="">Databeskyttelse</a></li>
+          <li class="accordion-content"><a href="">Sager vi støtter</a></li>
+        </ul>
+        <ul>
+          <div class="accordion-header">
+            <p class="footer-headline">Om GREJ</p>
+            <div class="accordion-arrow"></div>
+          </div>
+          <div class="accordion-content">
+            <li><a href="">Historie</a></li>
+            <li><a href="">Presse</a></li>
+            <li><a href="">Karriere</a></li>
+          </div>
+        </ul>
+      </section>
+      <section class="footer-images">
+        <img loading="lazy" id="footer-logo" src="./assets/icons/grej_logo.webp" alt="GREJ logo" />
+        <div class="social-media-icons">
+          <a href=""
+            ><img loading="lazy" src="./assets/icons/instagram.webp" alt="Instagram icon"
+          /></a>
+          <a href=""
+            ><img loading="lazy" src="./assets/icons/facebook.webp" alt="Facebook icon"
+          /></a>
+          <a href=""><img loading="lazy" src="./assets/icons/tiktok.webp" alt="TikTok icon" /></a>
+        </div>
+      </section>
+      <p id="cvr">GREJ CVR</p>
+    </footer>
   </body>
 </html>
