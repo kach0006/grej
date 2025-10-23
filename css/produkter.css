@@ -10,6 +10,33 @@ h1 {
   margin: 0 10px 50px 10px;
 }
 
+/* == CATEGORY HOVER EFFECT == */
+.category-image-1 {
+  content: url("../assets/img/kokkengrej.png");
+  transition: 0.3s;
+}
+
+.category-image-1:hover {
+  content: url("../assets/img/kokkengrej-hover.png");
+}
+
+.category-image-2 {
+  content: url("../assets/img/borddakning.png");
+  transition: 0.3s;
+}
+
+.category-image-2:hover {
+  content: url("../assets/img/borddakning-hover.png");
+}
+.category-image-3 {
+  content: url("../assets/img/elektronik.png");
+  transition: 0.3s;
+}
+
+.category-image-3:hover {
+  content: url("../assets/img/elektronik-hover.png");
+}
+
 .main-category {
   position: relative;
   max-width: 350px;

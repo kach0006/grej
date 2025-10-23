@@ -1,3 +1,5 @@
+const { createContext } = require("react");
+
 const productCards = document.querySelector(".product-cards");
 
 const products = document.querySelectorAll(".product");
